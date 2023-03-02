@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <p id="demo"></p>
+<script>
+let carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+</script> -->
+
+
+
+<!-- <p>You can declare many statements in one varible</p>
+<p id="demo"></p>
+<script>
+    let person="sundar",carname="volvo",price=5000000;
+    document.getElementById("demo").innerHTML=person;
+</script> -->
+
+
+
+
+<!-- <p>If you re-declare a JS variable use var keyword, it will not loose its value</p>
+<p id="demo"></p>
+<script>
+    var person="sundar";
+    var person;
+    document.getElementById("demo").innerHTML=person; -->
+
+
+
+
+<!-- <p>let keyword variables declare inside a {} block can be accessed out side the block</p>
+{
+    let x = 2;//X can not be used here
+}
+
+
+
+
+<p> var keyword has no block space</p>
+<p>variables declare inside a block {} can be accessed outside the block</p>
+{
+    var x=5; // x can be used here 
+}
+</script> -->
+
+
+
+
+<p id="demo"></p>
+<script>
+    // const cars=["BMW","Volvo","Thar"];
+    // cars[0]="Toyota";
+    // cars.push("BMW")
+    // document.getElementById("demo").innerHTML=cars
+
+
+
+
+    // const car={type:"THAR",model:"500",color:"white"};
+    // car.type="Toyota";
+    // car.owner="sundar"
+    // document.getElementById("demo").innerHTML="car owner is " + car.owner;
+
+
+
+
+
+// (Assignment Operator (=))
+// let x=5;y=5;z=x+y;
+// document.getElementById("demo").innerHTML=z;
+
+
+
+
+// let a=5;
+// let x=(5+5)*a;
+// document.getElementById("demo").innerHTML=x;
+
+
+
+
+// let x=-90;
+// x>>=4;
+// document.getElementById("demo").innerHTML=x
+
+
+
+
+// (undefined)
+// let car;
+// document.getElementById("demo").innerHTML=car + "<br>" + typeof car;
+
+
+
+
+// function Function(p1,p2) 
+// {
+//     return p1*p2; //local variables
+// }
+// document.getElementById("demo").innerHTML=Function(5,5)
+
+
+
+
+// let x=Function(5,5); //function is called
+// document.getElementById("demo").innerHTML=x;
+// function Function(a,b) 
+// {
+//     return a*b; //function is returned
+// }
+
+
+
+
+//marksheet.io (learn html,css,)
+//codeopen.io (practice html,css,js)
+
+
+
+//Convert Fahrenheit to Celsius:
+// function celcius(f)
+// {
+//     return (5/9)*(f-32);
+// }
+// document.getElementById("demo").innerHTML=celcius(77);
+
+
+
+//Accessing a function without()
+//will return the funtion definition(object) instead of the function result.
+// function celcius(f)
+// {
+//     return (5/9)*(f-32);
+// }
+// document.getElementById("demo").innerHTML=celcius;
+
+
+
+
+//Creating an object using object literal
+// emp={id:"555",name:"sundar",salary:"55555"};
+// document.getElementById("demo").innerHTML=emp.id + " " + emp.salary;
+
+
+
+
+//creating instance of an object directly (using new keyword)
+// var emp=new Object(); (new keyword is used to create object)
+// emp.id=555;
+// emp.name="sundar";
+// emp.salary="55555";
+// document.getElementById("demo").innerHTML="monthly " + emp.name + " salary is " + emp.salary ;
+
+
+
+// By using an object constructor
+//need to create function with arguments. Each argument will be assigned in the curent object using this keyword
+// this keyword refers to the current object.
+
+// function emp(id,name,salary)
+// {
+//     this.id=id;
+//     this.name=name;
+//     this.salary=salary;
+// }
+//     e=new emp(555,"sundar",55555)
+//     document.getElementById("demo").innerHTML=e.salary;
+
+
+
+//method in JS object
+// function emp(id,name,salary)
+// {
+//     this.id=id;
+//     this.name=name;
+//     this.salary=salary;
+//     this.changesalary=changesalary;
+//     function changesalary(othersalary)
+//     {
+//         this.salary=othersalary;
+//     }
+// }
+// e=new emp(555,"sundar",55555);
+// document.getElementById("demo").innerHTML=e.salary;
+// e.changesalary(666666);
+// document.getElementById("demo").innerHTML=e.salary;
+
+
+
+
+//strings
+// let text = "We are the so-called \"Vikings\" from the north. <br>" 
+// let text1 = "We are the so-called \'Vikings\'' from the north. <br>"
+// let text2 = "We are the so-called \\Vikings\\ from the north.<br>"
+// document.write(text); 
+// document.write(text1);
+// document.write(text2);
+
+
+// JS String Methods
+
+// String Length
+// let txt="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// document.getElementById("demo").innerHTML=txt.length;
+
+
+//String Replace
+// let text3="Please visit Microsoft!";
+// document.getElementById("demo").innerHTML=text3.replace("Microsoft","sundar")
+
+//String ReplaceAll
+// let text4 = "I love cats. Cats are very easy to love. Cats are very popular."
+// document.getElementById("demo").innerHTML = text4.replaceAll(/Cats/g,"Dogs");
+// document.getElementById("demo").innerHTML = text4.replaceAll(/cats/g,"dogs");
+
+
+
+//String toUpperCase()
+// let txt="AbCdEFGHIJKLMNOPQRSTUVWXYZ"
+// document.getElementById("demo").innerHTML=txt.toUpperCase();
+
+
+//String toLowerCase()
+let txt="AbCdEFGHIJKLMNOPQRSTUVWXYZ"
+document.getElementById("demo").innerHTML=txt.toLowerCase();
+
+
+
+//String concat (join two are more strings)
+// let a ="sundar";
+// let b ="kumar";
+// document.getElementById("demo").innerHTML=a.concat(" " + b);
+</script>
+</body>
+</html>
