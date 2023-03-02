@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/index.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <header>
+                        Sign up page
+                    </header>
+                </div>
+       
+                <div class="col-xs-9">
+        <section>
+            <form>
+                
+            <label for="fname" aria-label="Plaese enter your first name">First Name:</label><br>
+            <input type="text" id="fname">
+            </section><br>
+            <label id="lblDOB" for="D.O.B">D.O.B</label><br>
+            <input type="text" id="D.O.B" aria-labelledby="lblDOB spanD.O.B"><br>
+            <span id="spanD.O.B">MM/DD/YYYY</span><br><br>
+            <!-- <div role="radiogroup" aria-labelledby="lblsex">
+                <label id="lblsex">Select your sex</label><br>
+                <input type="radio" id="radiomale" name="radiomale">
+                <label for="radiomale">Male</label>
+                <input type="radio" id="radiofemale" name="radiomale">
+                <label for="radiofemale">Female</label>
+            </div> -->
+            <div class="sexRadioDiv" aria-labelledby="lblSexSection" role="radiogroup">
+                <label id="lblSexSection">Select Your Sex:</label><br>
+                <input type="radio" name="sexRadioButton" id="radioMale" value="Male">
+                <label for="radioMale">Male</label>
+                <input type="radio" name="sexRadioButton" id="radioFemale" value="female">
+                <label for="radioFemale">Female</label>
+            </div>
+            <div class="selectedsex" aria-live="polite">
+                <p></p>
+            </div>
+            <h3 id="lblHeader">Your Fav Sports</h3>
+            <div role="group" aria-labelledby="lblHeader">
+                <input type="checkbox" id="check1" name="check1" value="cricker">
+                <label for="check1">Cricket</label>
+                <input type="checkbox" id="check2" name="check2" value="Kabaddi">
+                <label for="check2">Kabaddi</label>
+                <input type="checkbox" id="check3" name="check3" value="Football">
+                <label for="check3">Football</label>
+        </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#"> I have read term and conditions</a>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            <div class="col-xs-12">
+            <button type="button" id="btncancel">Cancel</button>
+            <button type="button" id="btnsave" aria-label="save your preferences">Save</button>
+            </div>
+        </div>
+        </form>
+        </section>
+                </div>
+                <div class="col-xs-3 text-center" >
+                    <aside>
+                        <img src="../assets/youtube-logo.svg" alt=" youtube-logo"><br>
+                        <a href="#">Edit logo</a>
+                    </aside>
+                </div>
+                <div class="col-xs-12">
+        <footer>
+            @copyrights 2023
+        </footer>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('input[type="radio"][name="sexRadioButton"]').change(function(){
+                    $(".selectedsex p").append("you selected: " + $(this).val());
+                });
+            });
+        </script>
+    </body>
+</html> 
